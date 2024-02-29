@@ -1,5 +1,5 @@
 const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+h2.textContent = "Get to know me!";
 document.querySelector("body").appendChild(h2);
 
 //tabs 
@@ -24,3 +24,4 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   } 
+
