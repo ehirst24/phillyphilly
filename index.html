@@ -7,62 +7,88 @@
     <link rel="stylesheet" href="/css/font-awesome.css">
     <title>My Personal Website</title>
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+        <button class="tablinks" onclick="openCity(event, 'About-Me')">About Me</button>
         <button class="tablinks" onclick="openCity(event, 'Photos')">Photos</button>
-        <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
+        <button class="tablinks" onclick="openCity(event, 'Fun-Facts')">Fun Facts</button>
       </div>
       
   </head>
   <body>
     <h1>Ethan Hirst</h1>
     <script src="script.js"></script>
-          <!-- Tab content -->
-          <div id="About Me" class="tabcontent">
-            <h3>About Me</h3>
+        <!-- Tab content -->
+        <div id="About-Me" class="tabcontent" style="display:block">
+          <h3>About Me</h3>
             <p>Hey everyone! I've worked at Power for almost 2 years now and in that span I've had experience in 
               Customer Development, Inbound Scheduling, and currently inside Sales. Before working at Power I went to
               Temple University where I graduated with a degree in Engineering Technology. I am originally from a town in 
-              upstate New York, Binghamton, but have lived in Philly for 7 years now; but don't worry guys, I'm a birds fan.
+              upstate New York called Binghamton, but have lived in Philly for 7 years now; but don't worry guys, I'm a birds fan.
               My most recent jobs prior to working at Power were painting houses, construction installing solar panels on a solar farm,
               and a little bit of everything at a CNC mill plant; what a combo to lead me on this path to coding!</p>
-              <p>I enjoy traveling and experiencing all sorts of new activities. My hobbies include snowboarding, hiking, 
+            <p>I enjoy traveling and experiencing all sorts of new activities. My hobbies include snowboarding, hiking, 
                 and recently I've been dabbling in photography and upping my cooking game. I'm also a bit of a movie buff, be sure 
                 to add me on <a href="https://letterboxd.com/ehirst24/">letterboxd</a>. I'll follow back!</p>
-                <p>I look forward to meeting you all and if you have any quaestions feel free to reach out <a href="mailto:ethan.hirst@powerhrg.com">Send email</a></p>
+            <p>I look forward to meeting you all and if you have any quaestions feel free to reach out <a href="mailto:ethan.hirst@powerhrg.com">Send email</a></p>
             
-          </div>
+        </div>
           
-          <div id="Photos" class="tabcontent">
-            <h3>Photos</h3>
-            <p class="center">Click the arrows below to see some pictures from my recent travels!</p>
-            <div>
-              <img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Mexico.jpg" height="600px" width="900px">
-              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Baltimore.jpg" height="600px" width="900px"></div>
-              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Toronto.jpeg" height="600px" width="900px"></div>
-              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Utah.jpeg" height="600px" width="900px"></div>
-              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Vegas.jpeg" height="600px" width="900px"></div>
+        <div id="Photos" class="tabcontent">
+          <h3>Photos</h3>
+            <p class="center">Click the arrows beneath the picture to see some more from my recent travels!</p>
+              <img class="mySlides" src="images/Mexico.jpg" alt="Mexico" height="600" width="900">
+              <img class="mySlides" src="images/Baltimore.jpg" alt="Baltimore" height="600" width="900">
+              <img class="mySlides" src="images/Toronto.jpeg" alt="Toronto" height="600" width="900">
+              <img class="mySlides" src="images/Utah.jpeg" alt="Utah" height="600" width="900">
+              <img class="mySlides" src="images/Vegas.jpeg" alt="Vegas" height="600" width="900">
+        <div>
+              <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        </div>
+          
+          <div id="Fun-Facts" class="tabcontent">
+            <h2>Fun Facts</h2>
+              <h3>2 Truths and a Lie</h3>
+                <p>Click the button to the side of each statement. If the statement is true, the button will turn the statement green. If false, the statement will turn red. </p>
+                  <p>
+                  <div id="truth">I had surgery on both of my shoulders
+                    <a href="#" onclick="makeGreen()">Click me</a>
+                  </div>
+                </p>
+                <p>
+                  <div id="lie">I beat Jason Kelce in a beer chug
+                    <a href="#" onclick="makeRed()">Click me</a>
+                  </div>
+                </p>
+                <p>
+                  <div id="correct">I have been to Mars
+                    <a href="#" onclick="makeGreenTwo()">Click me</a>
+                  </div>
+                </p>
                 <div>
-                  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                  <h3>Favorite Things!</h3>
+                  
+                    <h4>Food:</h4>
+                      <ul>
+                        <li>Anything Italian - if I had to pick I would have to go with clams over linguinni</li>
+                        <li>Favorite restaurant in Philly - <a href="https://www.murphsbarfishtown.com/">Murph's</a> in Fishtown</li>
+                      </ul>  
+                    <h4>Movie:</h4>
+                      <ul>
+                        <li>Superbad</li>
+                      </ul>
+                    <h4>Band:</h4>
+                    <ul>
+                      <li>Led Zepplin</li>
+                    </ul>
+                    <h4>TV Show:</h4>
+                    <ul>
+                      <li>Peaky Blinders</li>
+                    </ul>
                 </div>
-            </div>
-          </div>
-          
-          <div id="Fun Facts" class="tabcontent">
-            <h3>Fun Facts</h3>
-            <h4>2 Truths and a Lie</h4>
-            <p>
-            <div id="myid">I have had surgery on both of my shoulders
-            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
-          </div>
-          <div id="myid">Hello There !!
-            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
-          </div>
-          <div id="myid">Hello There !!
-            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
-          </div>
-          </p>
+                <main>
             <p>My brother and I are trying to see a MLB game in every stadium. We have a long way to go but click to reveal if we have been to a stadium or not yet!</p>
+          </main>
             <table class="center">
                 <div>
                 <tr>
@@ -222,14 +248,8 @@
                 </tr>
                 </div>
               </table>
-              
           </div>
-          <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
-
-          <script>
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-          </script> 
+          <button class="tablinks" onclick="openCity(event, 'About-Me')" id="defaultOpen">About Me</button>
   </body>
 </html>
 
