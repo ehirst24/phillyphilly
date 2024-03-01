@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
     <title>My Personal Website</title>
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
-        <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+        <button class="tablinks" onclick="openCity(event, 'Photos')">Photos</button>
         <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
       </div>
       
@@ -19,23 +22,25 @@
             <p>Hey everyone! I've worked at Power for almost 2 years now and in that span I've had experience in 
               Customer Development, Inbound Scheduling, and currently inside Sales. Before working at Power I went to
               Temple University where I graduated with a degree in Engineering Technology. I am originally from a town in 
-              upstate New York, Binghamton, but have lived in Philly for 7 years now; and don't worry guys, I'm an Eagles fan.
+              upstate New York, Binghamton, but have lived in Philly for 7 years now; but don't worry guys, I'm a birds fan.
               My most recent jobs prior to working at Power were painting houses, construction installing solar panels on a solar farm,
               and a little bit of everything at a CNC mill plant; what a combo to lead me on this path to coding!</p>
               <p>I enjoy traveling and experiencing all sorts of new activities. My hobbies include snowboarding, hiking, 
                 and recently I've been dabbling in photography and upping my cooking game. I'm also a bit of a movie buff, be sure 
                 to add me on <a href="https://letterboxd.com/ehirst24/">letterboxd</a>. I'll follow back!</p>
+                <p>I look forward to meeting you all and if you have any quaestions feel free to reach out <a href="mailto:ethan.hirst@powerhrg.com">Send email</a></p>
+            
           </div>
           
           <div id="Photos" class="tabcontent">
             <h3>Photos</h3>
             <p class="center">Click the arrows below to see some pictures from my recent travels!</p>
             <div>
-              <img class="mySlides" src="images/Mexico.jpg" height="600px" width="900px">
-              <img class="mySlides" src="images/Baltimore.jpg" height="600px" width="900px">
-              <img class="mySlides" src="images/Toronto.jpeg" height="600px" width="900px">
-              <img class="mySlides" src="images/Utah.jpeg" height="600px" width="900px">
-              <img class="mySlides" src="images/Vegas.jpeg" height="600px" width="900px">
+              <img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Mexico.jpg" height="600px" width="900px">
+              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Baltimore.jpg" height="600px" width="900px"></div>
+              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Toronto.jpeg" height="600px" width="900px"></div>
+              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Utah.jpeg" height="600px" width="900px"></div>
+              <div><img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Vegas.jpeg" height="600px" width="900px"></div>
                 <div>
                   <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                   <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
@@ -45,6 +50,18 @@
           
           <div id="Fun Facts" class="tabcontent">
             <h3>Fun Facts</h3>
+            <h4>2 Truths and a Lie</h4>
+            <p>
+            <div id="myid">I have had surgery on both of my shoulders
+            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
+          </div>
+          <div id="myid">Hello There !!
+            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
+          </div>
+          <div id="myid">Hello There !!
+            <a href="#" onclick="changeColor('myid'); return false;">Change Color</a>
+          </div>
+          </p>
             <p>My brother and I are trying to see a MLB game in every stadium. We have a long way to go but click to reveal if we have been to a stadium or not yet!</p>
             <table class="center">
                 <div>

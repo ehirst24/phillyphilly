@@ -1,6 +1,3 @@
-const h2 = document.createElement("h2");
-h2.textContent = "Get to know me!";
-document.querySelector("body").appendChild(h2);
 
 //tabs 
 
@@ -25,21 +22,27 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   } 
 
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slideIndex = 2;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+	showDivs(slideIndex += n);
   }
-  x[slideIndex-1].style.display = "block";
-}
+  
+  function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length} ;
+	for (i = 0; i < x.length; i++) {
+	  x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "block";
+  }
 
+
+  function changeColor(id)
+{
+  		document.getElementById(id).style.color = "#ff0000"; // forecolor
+  		document.getElementById(id).style.backgroundColor = "#ff0000"; // backcolor
+}

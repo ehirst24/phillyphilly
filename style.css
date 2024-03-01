@@ -1,32 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background: rgb(216, 214, 214);
+    background: url("images/marble.webp") repeat 0 0;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: black;
 
   }
 
+  body, html {
+    height: 100%;
+  }
+  
  /* Style the tab */
  .tab {
     overflow: hidden;
-    border: 1px solid #636363;
-    background-color: #c7c5c5;
+    border: 10px solid #636363;
+    background-color: #4faef7e8;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+    background-color: #1a6fef;
+    border: 5px solid rgb(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+    border-radius: 16px;
+    font-family: 'Corben', Georgia, Times, serif;
   }
   
+
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #b3b0b0;
+    background-color: #5295fa;
   }
   
   /* Create an active/current tablink class */
@@ -38,9 +57,10 @@ body {
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
     border-top: none;
     text-align: center;
+    box-shadow: 0 0 1em 1em #ccc;
   } 
 
   .center {
@@ -70,8 +90,30 @@ body {
         margin-right: auto;
       }
 
-      main {
-        background-image: "/Users/ethan.hirst/Development/code/phillyphilly/images/houses.jpg";
-      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Corben', Georgia, Times, serif;
+    }
+    p, div {
+        font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    }
 
-    
+    .jumbotron .btn i { 
+      margin-right: 8px;  
+  }
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    color: rgba(255, 255, 255, 0);
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #ccc;
+    color: rgba(255, 255, 255, 0);
+  }
+
+.gradient {
+  filter: none;
+}
+
