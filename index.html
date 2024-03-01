@@ -16,60 +16,34 @@
           <!-- Tab content -->
           <div id="About Me" class="tabcontent">
             <h3>About Me</h3>
-            <p>Hey guys I am Ethan. I am 25 years old and live in Fishtown, Philadelphia. I graduated from Temple University with a degree in Engineering Technology and have been at Power ever since. In the span of about two years I have experience in Customer Development, Inbound Scheduling, and Inside Sales.</p>
+            <p>Hey everyone! I've worked at Power for almost 2 years now and in that span I've had experience in 
+              Customer Development, Inbound Scheduling, and currently inside Sales. Before working at Power I went to
+              Temple University where I graduated with a degree in Engineering Technology. I am originally from a town in 
+              upstate New York, Binghamton, but have lived in Philly for 7 years now; and don't worry guys, I'm an Eagles fan.
+              My most recent jobs prior to working at Power were painting houses, construction installing solar panels on a solar farm,
+              and a little bit of everything at a CNC mill plant; what a combo to lead me on this path to coding!</p>
           </div>
           
           <div id="Experience" class="tabcontent">
             <h3>Experience</h3>
             <p class="center">I graduated from Temple University with a bachelors degree in Engineering Technology. Straight out of college I began working at Power. In almost two years I have experience in Customer Development, Inbound Scheduling, and Inside Sales.</p>
-            <body>
-
-
-
-                <!--new slideshow code-->
-                <head>
-                    <meta charset="utf-8" />
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                    <title>Image Slider</title>
-                    <meta name="viewport" content=
-                        "width=device-width, initial-scale=1" />
-                    <link rel="stylesheet" href=
-                "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-                    <script src=
-                        "https://code.jquery.com/jquery-3.6.0.min.js ">
-                    </script>
-                    <link rel="stylesheet" href="style.css" />
-                    <script src="script.js"></script>
-                </head>
-                 
-                <body>
-                    <div id="arrow-left" class="arrow"></div>
-                    <div class="slide slide1"></div>
-                    <div class="slide slide2"></div>
-                    <div class="slide slide3"></div>
-                    <div id="arrow-right" class="arrow"></div>
-                </body>
-
-                <!--end of new code-->
-
-
-
-                <div class="content">
-                    <div class="images">
-                        <img src="images/Mexico.jpg">
-                        <img src="images/Baltimore.jpg">
-                        <img src="images/Utah.jpeg">
-                        <img src="images/Vegas.jpeg">
-                        <img src="images/Toronto.jpeg">
-                    </div>
-                    <div onclick="side_slide(-1)" class="slide left">
-                        <span class="fa fa-angle-left"></span>
-                    </div>
-                    <div onclick="side_slide(1)" class="slide right">
-                        <span class="fa fa-angle-right"></span>
-                    </div>
+            <div>
+              <img class="mySlides" src="images/Mexico.jpg" height="400px" width="700px">
+              <img class="mySlides" src="images/Toronto.jpeg" height="400px" width="700px">
+              <img class="mySlides" src="/Users/ethan.hirst/Development/code/phillyphilly/images/Utah.jpeg" height="400px" width="700px">
+              <img class="mySlides" src="images/Vegas.jpeg" height="400px" width="700px">
+                <div>
+                  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
-            </body>
+            </div>
+            <div class="w3-display-container mySlides">
+              <img src="images/Mexico.jpg" style="width:100%">
+              <div class="w3-display-topright w3-container w3-padding-16 w3-black">
+                Mexico
+              </div>
+            </div>
+            </div>
           </div>
           
           <div id="Fun Facts" class="tabcontent">
@@ -97,6 +71,11 @@
                     <td>St. Louis Cardinals</td>
                     <td>No</td>
                 </tr>
+                <tr>
+                  <td>Camden Yards</td>
+                  <td>Baltimore Orioles</td>
+                  <td>No</td>
+              </tr>
                 <tr>
                     <td>Chase Field</td>
                     <td>Arizona Diamondbacks</td>
@@ -175,11 +154,6 @@
                   <tr>
                     <td>Oracle Park</td>
                     <td>San Francisco Giants</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Oriole Park at Camden Yards</td>
-                    <td>Baltimore Orioles</td>
                     <td>No</td>
                 </tr>
                 <tr>
