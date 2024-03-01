@@ -1,13 +1,16 @@
 body {
-    background: gray;
+    background: rgb(216, 214, 214);
     text-align: center;
+    align-items: center;
+    justify-content: center;
+
   }
 
  /* Style the tab */
  .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid #636363;
+    background-color: #c7c5c5;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -23,7 +26,7 @@ body {
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #b3b0b0;
   }
   
   /* Create an active/current tablink class */
@@ -44,3 +47,73 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .selected { 
+    background-color: #f2f2f2; 
+  } 
+
+  table{
+    border-collapse:collapse;
+    border:1px solid #000000;
+    }
+    
+    table td{
+    border:1px solid #000000;
+    }
+
+    table td{
+        color:#000000;
+      }
+
+
+    .slide {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .slide1 {
+        background-image: url(
+    "images/Mexico.jpg");
+    }
+    
+    .slide2 {
+        background-image: url(
+    "images/Baltimore.jpg");
+    }
+    
+    .slide3 {
+        background-image: url(
+    "images/Toronto.jpeg");
+    }
+    
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        border-color: transparent #fff transparent transparent;
+        left: 0;
+        margin-left: 20px;
+    }
+    
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        border-color: transparent transparent transparent #fff;
+        right: 0;
+        margin-right: 20px;
+    }
+    

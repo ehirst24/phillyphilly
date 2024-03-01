@@ -13,17 +13,63 @@
   <body>
     <h1>Ethan Hirst</h1>
     <script src="script.js"></script>
-        <!--pyramid pic-->
-        <img src="https://github.com/ehirst24/phillyphilly/issues/1#issue-2160216512" alt="Pyramid">
           <!-- Tab content -->
           <div id="About Me" class="tabcontent">
             <h3>About Me</h3>
-            <p>Hey guys I am Ethan. I am 25 years old and live in Fishtown, Philadelphia.</p>
+            <p>Hey guys I am Ethan. I am 25 years old and live in Fishtown, Philadelphia. I graduated from Temple University with a degree in Engineering Technology and have been at Power ever since. In the span of about two years I have experience in Customer Development, Inbound Scheduling, and Inside Sales.</p>
           </div>
           
           <div id="Experience" class="tabcontent">
             <h3>Experience</h3>
-            <p>I graduated from Temple University with a bachelors degree in Engineering Technology. Straight out of college I began working at Power. In almost two years I have experience in Customer Development, Inbound Scheduling, and Inside Sales.</p>
+            <p class="center">I graduated from Temple University with a bachelors degree in Engineering Technology. Straight out of college I began working at Power. In almost two years I have experience in Customer Development, Inbound Scheduling, and Inside Sales.</p>
+            <body>
+
+
+
+                <!--new slideshow code-->
+                <head>
+                    <meta charset="utf-8" />
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                    <title>Image Slider</title>
+                    <meta name="viewport" content=
+                        "width=device-width, initial-scale=1" />
+                    <link rel="stylesheet" href=
+                "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+                    <script src=
+                        "https://code.jquery.com/jquery-3.6.0.min.js ">
+                    </script>
+                    <link rel="stylesheet" href="style.css" />
+                    <script src="script.js"></script>
+                </head>
+                 
+                <body>
+                    <div id="arrow-left" class="arrow"></div>
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                    <div id="arrow-right" class="arrow"></div>
+                </body>
+
+                <!--end of new code-->
+
+
+
+                <div class="content">
+                    <div class="images">
+                        <img src="images/Mexico.jpg">
+                        <img src="images/Baltimore.jpg">
+                        <img src="images/Utah.jpeg">
+                        <img src="images/Vegas.jpeg">
+                        <img src="images/Toronto.jpeg">
+                    </div>
+                    <div onclick="side_slide(-1)" class="slide left">
+                        <span class="fa fa-angle-left"></span>
+                    </div>
+                    <div onclick="side_slide(1)" class="slide right">
+                        <span class="fa fa-angle-right"></span>
+                    </div>
+                </div>
+            </body>
           </div>
           
           <div id="Fun Facts" class="tabcontent">
