@@ -9,15 +9,12 @@ body {
     margin: 0px;
     background-position: center;
     background-size: cover;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    justify-content: center;
     color: black;
-
-  }
-
-  body, html {
-    height: 100%;
+    line-height: 170%;
+    font size: 2em; 
   }
   
  /* Style the tab */
@@ -72,6 +69,8 @@ body {
     background-color: #f2f2f2; 
   } 
 
+  /*table*/
+
   table{
     border-collapse:collapse;
     border:1px solid #000000;
@@ -84,6 +83,8 @@ body {
     table td{
         color:#000000;
       }
+
+
 
       .mySlides{
         margin-left: auto;
@@ -121,6 +122,11 @@ body {
         font-family: 'Nobile', Helvetica, Arial, sans-serif;
     }
 
+    h3 {
+      text-decoration: underline;
+      margin-top: 40px;
+    }
+
 
   .header {
     padding: 30px;
@@ -140,8 +146,8 @@ body {
 }
 
 main {
-  margin-top: 40px; 
-  padding: 40px;
+  margin-top: 5px; 
+  padding: 5px;
 }
 
 .truth {
@@ -151,6 +157,12 @@ main {
 ul {
   list-style-position: inside;
   text-align: center;
-  list-style-type: circle;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+button.w3-button-w3-display-left {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
