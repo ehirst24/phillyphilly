@@ -1,6 +1,8 @@
 
 //tabs 
 
+document.getElementById("defaultOpen").click();
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -22,17 +24,14 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-  document.getElementById("defaultOpen").click();
-
 //slideshow 
 
 var slideIndex = 1;
+showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
-showDivs(slideIndex);
 
 function showDivs(n) {
   var i;
@@ -44,7 +43,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-
 
 
 //2 truths and a lie
