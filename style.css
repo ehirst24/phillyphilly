@@ -165,3 +165,7 @@ button.w3-button-w3-display-left {
   margin-left: auto;
   margin-right: auto;
 }
+
+img {
+  margin-top: 10px;
+}
